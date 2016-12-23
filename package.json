@@ -68,5 +68,7 @@
       }
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-install": "^0.6.0"
+  }
 }

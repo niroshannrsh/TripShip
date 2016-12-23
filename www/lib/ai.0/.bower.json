@@ -1,0 +1,15 @@
+{
+  "name": "ai.0",
+  "_cacheHeaders": {
+    "Content-MD5": "Ce6devKt86YVCwo6hQH4gw==",
+    "ETag": "0x8D41D66F1E1CF69",
+    "Last-Modified": "Mon, 05 Dec 2016 23:32:14 GMT",
+    "Content-Length": "20935",
+    "Content-Type": "application/x-javascript"
+  },
+  "_release": "e-tag:0x8D41D66F",
+  "main": "index.js",
+  "_source": "https://az416426.vo.msecnd.net/scripts/a/ai.0.js",
+  "_target": "*",
+  "_originalSource": "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"
+}
