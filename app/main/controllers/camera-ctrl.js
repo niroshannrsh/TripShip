@@ -28,7 +28,7 @@ angular.module('main')
 // });
 
 .controller('CameraCtrl', function ($scope,$cordovaCamera) {
-     var upload =function (){
+     var upload =function (file,type){
 
      };
 
@@ -68,7 +68,7 @@ angular.module('main')
         saveToPhotoAlbum: false
       };
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        console.log("camera is opend")
+        console.log("camera is opend"+imageData)
         upload(getBlob(imageData, 'image/jpeg')).then(
           function(data) {
            console.log("sucess");
@@ -79,4 +79,4 @@ angular.module('main')
       });
     };
     
-   
+}
