@@ -55,16 +55,7 @@ angular.module('main')
 
      $scope.takePic = function() {
 
-    /*
-        var options =   {
-            quality: 50,
-            destinationType: Camera.DestinationType.FILE_URI,
-            sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Photo Album
-            encodingType: 0     // 0=JPG 1=PNG
-        }
-        navigator.camera.getPicture(onSuccess,onFail,options);
-
-    */
+  
          var options = {
         destinationType: Camera.DestinationType.DATA_URL,
         sourceType: Camera.PictureSourceType.CAMERA,
@@ -77,22 +68,7 @@ angular.module('main')
         saveToPhotoAlbum: false
       };
       $cordovaCamera.getPicture(options).then(function(imageData) {
-        /*
-        $scope.newImage = {
-          type: "image",
-          created_at: new Date(),
-          updated_at: new Date(),
-          url: null,
-          user: {
-            email: $scope.currentUser.email,
-            name: $scope.currentUser.name,
-            user_id: $scope.currentUser.id
-          }
-        };
-        */
-
-        //$scope.addImage($scope.newImage);
-
+        console.log("camera is opend")
         upload(getBlob(imageData, 'image/jpeg')).then(
           function(data) {
            console.log("sucess");
@@ -100,8 +76,6 @@ angular.module('main')
           function(err) {
             console.log(err);
           });
-      }, function(err) {
-        console.log(err);
       });
     };
     
